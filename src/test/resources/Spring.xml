@@ -1,0 +1,8 @@
+<beans>
+    <bean id = "userDao" class = "com.sjft.springframework.beans.factory.bean.UserDao"/>
+
+    <bean id = "userService" class="com.sjft.springframework.beans.factory.bean.UserService">
+        <property name = "uId" value = "1"/>
+        <property name = "userDao" ref = "userDao"/>
+    </bean>
+</beans>
